@@ -94,10 +94,13 @@
 </style>
 </head>
 <script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js")
-    .then(reg => console.log("SW registered", reg))
-    .catch(err => console.log("SW failed", err));
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    // scope = папка, где лежит index.html (например /username/roma-pwa/)
+    const scope = location.pathname.replace(/[^/]+$/, '');
+    navigator.serviceWorker.register(scope + 'sw.js', { scope })
+      .catch(console.warn);
+  });
 }
 </script>
 <body>
@@ -711,6 +714,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 </script>
 </body>
 </html>
+
 
 
 
