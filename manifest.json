@@ -1,0 +1,20 @@
+{
+  "name": "Roma PWA",
+  "short_name": "Roma",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "sun_transparent.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "sun_transparent.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
