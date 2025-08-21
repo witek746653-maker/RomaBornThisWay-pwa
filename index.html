@@ -89,6 +89,13 @@
   .tag{position:absolute;padding:2px 4px;border-radius:4px;font-size:10px;color:#111;background:rgba(255,255,0,.6)}
 </style>
 </head>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js")
+    .then(reg => console.log("SW registered", reg))
+    .catch(err => console.log("SW failed", err));
+}
+</script>
 <body>
 <div class="wrap">
 
@@ -700,6 +707,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 </script>
 </body>
 </html>
+
 
 
 
