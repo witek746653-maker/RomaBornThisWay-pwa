@@ -96,8 +96,7 @@
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    github.com/witek746653-maker/RomaBornThisWay-pwa/blob/main/
-    const scope = location.pathname.replace(/[^/]+$/, '');
+    const scope = "/roma-pwa/";
     navigator.serviceWorker.register(scope + 'sw.js', { scope })
       .catch(console.warn);
   });
@@ -714,6 +713,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 </script>
 </body>
 </html>
+
 
 
 
