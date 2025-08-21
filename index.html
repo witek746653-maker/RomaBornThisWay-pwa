@@ -6,7 +6,11 @@
 <title>Распределение — мобильная</title>
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#ffe9c4">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
+
+<!-- Важно для iOS A2HS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
 <style>
   :root{
     --ink:#2c2a29;--bg:#ffffff;--panel:#fffdfc;--line:#8b5e57;--muted:#7a6662;
@@ -707,5 +711,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
 </script>
 </body>
 </html>
+
 
 
